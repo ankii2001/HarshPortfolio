@@ -25,8 +25,14 @@ type Props = {
   socials: Social[];
 };
 
-const Home: NextPage<Props> = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
-// const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
+const Home: NextPage<Props> = ({
+  pageInfo,
+  experiences,
+  projects,
+  skills,
+  socials,
+}: Props) => {
+  // const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
     <div
       className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar scrollbar-track-gray-400/5

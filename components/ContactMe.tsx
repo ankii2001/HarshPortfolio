@@ -14,7 +14,7 @@ type Props = {
   pageInfo: PageInfo;
 };
 
-function ContactMe({pageInfo}: Props) {
+function ContactMe({ pageInfo }: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -31,20 +31,26 @@ function ContactMe({pageInfo}: Props) {
 
       <div className="flex flex-col space-y-8 mt-32">
         <h4 className="text-2xl md:text-4xl font-semibold text-center">
-          I have got just what you need,{" "}
-          <br className="flex md:hidden"/>
+          I have got just what you need, <br className="flex md:hidden" />
           <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
         </h4>
 
         <div className="space-y-4">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <a href="tel:+91 9711219705" className="text-xl md:text-2xl">{pageInfo?.phoneNumber}</a>
+            <a href="tel:+91 9711219705" className="text-xl md:text-2xl">
+              {pageInfo?.phoneNumber}
+            </a>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-            <a href="mailto:ankitluthra2001@gmail.com" className="text-xl md:text-2xl">{pageInfo?.email}</a>
+            <a
+              href="mailto:ankitluthra2001@gmail.com"
+              className="text-xl md:text-2xl"
+            >
+              {pageInfo?.email}
+            </a>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">

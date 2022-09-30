@@ -25,9 +25,10 @@ function Projects({ projects }: Props) {
       >
         {projects?.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
-          <div 
-          key ={project._id}
-          className="w-screen flex-shrink-0 snap-center flex flex-col space-y-4 items-center justify-center p-8 md:p-52 h-screen">
+          <div
+            key={project._id}
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-4 items-center justify-center p-8 md:p-52 h-screen"
+          >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.5 }}
@@ -46,14 +47,14 @@ function Projects({ projects }: Props) {
                 <br className="flex md:hidden" />
                 <span className="font-bold">{project?.title}</span>
                 <div className="flex items-center space-x-2 justify-center mt-3">
-                {project?.technologies.map((technology) => (
-                  <img
-                    className="h-10 w-10"
-                    key={technology._id}
-                    src={urlFor(technology.image).url()}
-                    alt=""
-                  />
-                ))}
+                  {project?.technologies.map((technology) => (
+                    <img
+                      className="h-10 w-10"
+                      key={technology._id}
+                      src={urlFor(technology.image).url()}
+                      alt=""
+                    />
+                  ))}
                 </div>
               </h4>
               <p className="text-lg text-center md:text-justify">
