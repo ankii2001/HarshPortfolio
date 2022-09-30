@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Project } from "../typings";
 import { urlFor } from "../sanity";
+import Link from "next/link";
 
 type Props = {
   projects: Project[];
@@ -45,7 +46,9 @@ function Projects({ projects }: Props) {
                   Project {i + 1} of {projects.length} :
                 </span>{" "}
                 <br className="flex md:hidden" />
-                <span className="font-bold">{project?.title}</span>
+                <Link href={project?.linkToBuild}>
+                <span className="font-bold cursor-pointer animate-pulse">{project?.title}</span>
+                </Link>
                 <div className="flex items-center space-x-2 justify-center mt-3">
                   {project?.technologies.map((technology) => (
                     <img
