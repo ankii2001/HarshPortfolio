@@ -5,21 +5,21 @@ import { Skill } from "../typings";
 
 type Props = {
   skill: Skill;
-  directionLeft?: boolean;
+  // directionLeft?: boolean;
 };
 
-function Skill({ skill, directionLeft }: Props) {
+function Skill({ skill }: Props) {
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
         initial={{
-          x: directionLeft ? -100 : 100,
+          // x: directionLeft ? -100 : 100,
+          scale: 0.5,
           opacity: 0,
         }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, x: 1 }}
-        viewport = {{ once: true }}
-        
+        transition={{ duration: 1.5 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+
         src={urlFor(skill?.image).url()}
         className="rounded-full border border-gray-500 object-cover p-1.5 w-16 md:w-20 h-16 md:h-20 filter group-hover:grayscale
         transition duration-300 ease-in-out"
