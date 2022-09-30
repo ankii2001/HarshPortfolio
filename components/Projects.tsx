@@ -49,7 +49,7 @@ function Projects({ projects }: Props) {
                 <Link href={project?.linkToBuild}>
                 <span className="font-bold cursor-pointer animate-pulse">{project?.title}</span>
                 </Link>
-                <div className="flex items-center space-x-2 justify-center mt-3">
+                <div className="flex items-center space-x-2 justify-center mt-1">
                   {project?.technologies.map((technology) => (
                     <img
                       className="h-10 w-10"
@@ -67,7 +67,6 @@ function Projects({ projects }: Props) {
           </div>
         ))}
       </div>
-
       <div className="w-full absolute top-[36%] bg-[#F7AB0A]/10 left-0 h-[400px] md:h-[280px] -skew-y-12" />
     </motion.div>
   );
