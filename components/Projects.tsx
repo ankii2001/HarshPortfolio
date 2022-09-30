@@ -28,7 +28,7 @@ function Projects({ projects }: Props) {
           // eslint-disable-next-line react/jsx-key
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-always snap-center flex flex-col space-y-4 items-center justify-center p-8 md:p-52 h-screen"
+            className="w-screen flex-shrink-0 snap-always snap-center flex flex-col space-y-4 items-center justify-center p-8 md:p-52"
           >
             <motion.img
               initial={{ y: -180, opacity: 0 }}
