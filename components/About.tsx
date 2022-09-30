@@ -32,16 +32,16 @@ export default function About({ pageInfo }: Props) {
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
         alt="Ankit Luthra"
-        className="-mb-24 mt-16 md:mb-0 md:mt-0 flex-shrink-0 w-52 h-52 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:[200px] xl:h-[330px]"
+        className="-mb-24 mt-16 md:mb-0 md:mt-0 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:[200px] xl:h-[330px]"
       />
 
       <div className="space-y-6 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold mt-5 md:mt-0">
+        <h4 className="text-3xl md:text-4xl font-semibold mt-5 md:mt-0">
           Here is a{" "}
-          <span className="underline  decoration-[#F7AB0A]/50">little</span>{" "}
+          <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-base md:text-lg">
+        <p className="text-md md:text-lg">
           {pageInfo?.backgroundInformation}
         </p>
       </div>

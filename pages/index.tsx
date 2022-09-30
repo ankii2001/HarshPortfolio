@@ -29,7 +29,7 @@ type Props = {
 const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
   return (
     <div
-      className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar scrollbar-track-gray-400/5
+      className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar-thin md:scrollbar scrollbar-track-gray-400/5
     scrollbar-thumb-[#F7AB0A]/80"
     >
       <Head>
@@ -63,13 +63,13 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
         <ContactMe pageInfo={pageInfo} />
       </section>
 
-      <footer className="sticky bottom-5 w-full pr-10 pb-5 ">
+      <footer className="sticky bottom-5 w-full pr-10 pb-10">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex items-center justify-end "
+          className="flex items-center justify-end"
         >
           <Link href="#hero">
             <p className="flex items-center cursor-pointer rounded-full bg-[#F7AB07]/80 p-2 animate-bounce">
