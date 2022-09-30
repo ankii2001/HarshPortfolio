@@ -5,6 +5,8 @@ import { urlFor } from "../sanity";
 import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
 
+var ankitResume = "/AnkitLuthraCV.pdf";
+
 type Props = {
   pageInfo: PageInfo;
 };
@@ -49,6 +51,11 @@ export default function Hero({ pageInfo }: Props) {
           </Link>
           <Link href="#projects">
             <button className="herobutton">Projects</button>
+          </Link>
+          <Link href={ankitResume}>
+            <button className="herobutton md:hidden">
+              <a rel="noopener noreferrer" target="_blank">Resume</a>
+            </button>
           </Link>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { PageInfo } from "../typings";
+import { motion } from "framer-motion";
 
 type Inputs = {
   name: string;
@@ -36,12 +37,16 @@ function ContactMe({ pageInfo }: Props) {
         </h4>
 
         <div className="space-y-4">
-          <div className="flex items-center space-x-2 justify-center">
+          <motion.div
+          initial = {{x: 300, opacity: 0}}
+          whileInView = {{x: 0, opacity: 1}}
+          transition = {{duration: 1.5}}
+          className="flex items-center space-x-2 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <a href="tel:+91 9711219705" className="text-xl md:text-2xl">
               {pageInfo?.phoneNumber}
             </a>
-          </div>
+          </motion.div>
 
           <div className="flex items-center space-x-2 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
@@ -53,10 +58,14 @@ function ContactMe({ pageInfo }: Props) {
             </a>
           </div>
 
-          <div className="flex items-center space-x-2 justify-center">
+          <motion.div
+          initial = {{x: -300, opacity: 0}}
+          whileInView = {{x: 0, opacity: 1}}
+          transition = {{duration: 1.5}}
+          className="flex items-center space-x-2 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-xl md:text-2xl">{pageInfo?.address}</p>
-          </div>
+          </motion.div>
         </div>
 
         <form

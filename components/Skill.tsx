@@ -15,7 +15,7 @@ function Skill({ skill }: Props) {
         initial={{
           // x: directionLeft ? -100 : 100,
           scale: 0.5,
-          opacity: 0,
+          opacity: 0.5,
         }}
         transition={{ duration: 1.5 }}
         whileInView={{ opacity: 1, scale: 1 }}

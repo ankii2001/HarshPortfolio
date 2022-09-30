@@ -47,7 +47,7 @@ function Projects({ projects }: Props) {
                 </span>{" "}
                 <br className="flex md:hidden" />
                 <Link href={project?.linkToBuild}>
-                <span className="font-bold cursor-pointer animate-pulse">{project?.title}</span>
+                <a target="_blank" className="font-bold cursor-pointer animate-pulse">{project?.title}</a>
                 </Link>
                 <div className="flex items-center space-x-2 justify-center mt-1">
                   {project?.technologies.map((technology) => (
