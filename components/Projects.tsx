@@ -22,7 +22,7 @@ function Projects({ projects }: Props) {
 
       <div
         className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20
-      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80"
+      scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 h-screen"
       >
         {projects?.map((project, i) => (
           // eslint-disable-next-line react/jsx-key
@@ -40,7 +40,7 @@ function Projects({ projects }: Props) {
               alt=""
             />
 
-            <div className="space-y-6 px-0 md:px-10 max-w-6xl">
+            <div className="space-y-3 px-0 md:px-10 max-w-6xl">
               <h4 className="text-center text-2xl md:text-4xl">
                 <span className="font-semibold underline decoration-[#F7AB0A]/50">
                   Project {i + 1} of {projects.length} :
