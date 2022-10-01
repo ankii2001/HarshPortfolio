@@ -14,10 +14,10 @@ function Skill({ skill }: Props) {
       <motion.img
         initial={{
           // x: directionLeft ? -100 : 100,
-          scale: 0.5,
+          scale: 0,
           opacity: 0.5,
         }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, scale: 1 }}
 
         src={urlFor(skill?.image).url()}
