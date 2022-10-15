@@ -38,7 +38,7 @@ function ContactMe({ pageInfo }: Props) {
 
         <div className="space-y-4">
           <motion.div
-          initial = {{x: -80, opacity: 0}}
+          initial = {{x: -20, opacity: 0}}
           whileInView = {{x: 0, opacity: 1}}
           transition = {{duration: 1.5}}
           viewport = {{once: true}}
@@ -60,7 +60,7 @@ function ContactMe({ pageInfo }: Props) {
           </div>
 
           <motion.div
-          initial = {{x: 80, opacity: 0}}
+          initial = {{x: 20, opacity: 0}}
           whileInView = {{x: 0, opacity: 1}}
           transition = {{duration: 1.5}}
           viewport = {{once: true}}
