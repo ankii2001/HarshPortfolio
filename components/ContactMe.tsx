@@ -41,7 +41,7 @@ function ContactMe({ pageInfo }: Props) {
           initial = {{x: -40, opacity: 0}}
           whileInView = {{x: 0, opacity: 1}}
           transition = {{duration: 1.5}}
-          viewport = {{once: true}}
+          // viewport = {{once: true}}
           className="flex items-center space-x-2 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <a href="tel:+91 9711219705" className="text-xl md:text-2xl">
@@ -63,7 +63,7 @@ function ContactMe({ pageInfo }: Props) {
           initial = {{x: 40, opacity: 0}}
           whileInView = {{x: 0, opacity: 1}}
           transition = {{duration: 1.5}}
-          viewport = {{once: true}}
+          // viewport = {{once: true}}
           className="flex items-center space-x-2 justify-center">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <p className="text-xl md:text-2xl">{pageInfo?.address}</p>
