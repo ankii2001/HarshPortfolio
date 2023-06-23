@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Ankit Luthra <ankitluthra2001@gmail.com>",
+  "author": "Ankit Luthra <hbshokeen@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",

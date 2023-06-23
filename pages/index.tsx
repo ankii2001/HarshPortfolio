@@ -35,7 +35,6 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       <Head>
         <title>{pageInfo?.name}</title>
         <meta name="description" content="AnkitLuthraPortfolio"/>
-        <link rel="icon" href="/AnkiiGit.png" />
       </Head>
 
       <Header socials={socials} />
