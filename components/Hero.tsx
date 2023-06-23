@@ -14,7 +14,7 @@ type Props = {
 export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
-      `Hey, The name's ${pageInfo?.name}`,
+      `Hey, My name is ${pageInfo?.name}`,
       "Guy-who-loves-Coffee.tsx",
       "<ButLovesToCodeMore />",
     ],
