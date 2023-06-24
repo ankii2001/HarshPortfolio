@@ -5,7 +5,7 @@ import { urlFor } from "../sanity";
 import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
 
-var ankitResume = "/AnkitLuthraCV.pdf";
+var Resume = "/HARSH_SHOKEEN__RESUME.pdf";
 
 type Props = {
   pageInfo: PageInfo;
@@ -15,7 +15,7 @@ export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
       `Hey, My name is ${pageInfo?.name}`,
-      "Guy-who-loves-Coffee.tsx",
+      "Guy-who-loves-Coffee",
       "<ButLovesToCodeMore />",
     ],
     loop: true,
@@ -27,7 +27,7 @@ export default function Hero({ pageInfo }: Props) {
       <img
         className="relative object-cover w-32 h-32 rounded-full mx-auto"
         src={urlFor(pageInfo.HeroImage).url()}
-        alt="Ankit Luthra"
+        alt="Profile Picture"
       />
 
       <div className="z-20">
@@ -52,7 +52,7 @@ export default function Hero({ pageInfo }: Props) {
           <Link href="#projects">
             <button className="herobutton">Projects</button>
           </Link>
-          <Link href={ankitResume}>
+          <Link href={Resume}>
             <button className="herobutton md:hidden">
               <a rel="noopener noreferrer" target="_blank">Resume</a>
             </button>

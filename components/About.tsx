@@ -31,7 +31,7 @@ export default function About({ pageInfo }: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
-        alt="Ankit Luthra"
+        alt="Profile Picture"
         className="-mb-24 mt-16 md:mb-0 md:mt-0 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:[200px] xl:h-[330px]"
       />
 

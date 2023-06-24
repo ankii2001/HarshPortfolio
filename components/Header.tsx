@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Social } from "../typings";
 
-var ankitResume = "/AnkitLuthraCV.pdf";
+var Resume = "/HARSH_SHOKEEN__RESUME.pdf";
 
 type Props = {
   socials: Social[];
@@ -58,7 +58,7 @@ export default function Header({ socials }: Props) {
         }}
         className="flex flex-row items-center text-gray-400 cursor-pointer space-x-2"
       >
-        <Link href={ankitResume}>
+        <Link href={Resume}>
           <a target="_blank" className="items-center text-gray-400 hidden md:inline-flex">
           <FiDownload className="text-3xl px-1.5 "/>
             <h1 className="uppercase text-sm"> Resume </h1>

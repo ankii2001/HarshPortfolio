@@ -19,7 +19,7 @@ function ContactMe({ pageInfo }: Props) {
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:ankitluthra2001@gmail?subject=${formData.subject}&body=Hello, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+    window.location.href = `mailto:harshshokeen2@gmail?subject=${formData.subject}&body=Hello, my name is ${formData.name}. ${formData.message} (${formData.email})`;
   };
   return (
     <div
@@ -52,7 +52,7 @@ function ContactMe({ pageInfo }: Props) {
           <div className="flex items-center space-x-2 justify-center">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
             <a
-              href="mailto:ankitluthra2001@gmail.com"
+              href="mailto:harshshokeen2@gmail.com"
               className="text-xl md:text-2xl"
             >
               {pageInfo?.email}

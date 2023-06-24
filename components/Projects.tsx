@@ -64,7 +64,7 @@ function Projects({ projects }: Props) {
           </div>
         ))}
       </div>
-      <div className="w-full absolute top-[36%] bg-[#F7AB0A]/10 left-0 h-[400px] md:h-[280px] -skew-y-12" />
+      <div className="w-full absolute top-[22%] bg-[#F7AB0A]/10 left-0 h-[400px] md:h-[280px] -skew-y-12" />
     </motion.div>
   );
 }
