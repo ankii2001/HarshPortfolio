@@ -35,7 +35,7 @@ function Projects({ projects }: Props) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
-              className="w-9/12 h-auto md:w-5/12 md:h-auto"
+              className="w-9/12 h-auto md:w-5/12 md:h-auto mt-6 md:mt-20"
               alt=""
             />
 
@@ -57,7 +57,7 @@ function Projects({ projects }: Props) {
                   ))}
                 </div>
               </h4>
-              <p className="text-base md:text-lg text-center md:text-justify">
+              <p className="text-base md:text-lg text-center md:text-justify overflow-y-scroll h-32 z-10 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 px-3">
                 {project?.summary}
               </p>
             </div>
